@@ -4,10 +4,11 @@ export interface DataProps {
   id: number;
 }
 
-export interface FilterPriceProps {
+export interface FilterProps {
   backgroundColor?: string;
   size?: "small" | "medium" | "large";
   onClick?: () => void;
-  data: DataProps | any;
+  data: DataProps[];
   border?: string;
 }
+

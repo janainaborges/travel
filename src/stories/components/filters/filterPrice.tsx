@@ -1,10 +1,12 @@
 import React from "react";
 import { FilterPriceButton } from "./filterPrice.styled";
-import { DataProps, FilterPriceProps } from "@/types/components/buttons.types";
+import { DataProps, FilterProps } from "@/types/components/filters.types";
+import colors from "../../../utils/themes/colors";
 
-const FilterPrice: React.FC<FilterPriceProps> = ({
+
+const FilterPrice: React.FC<FilterProps> = ({
   size = "large",
-  backgroundColor = "#4070F4",
+  backgroundColor = `${colors.primary}`,
   data = [],
   border = "2px",
   ...props

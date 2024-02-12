@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import FilterPrice from "./components/filter/filterPrice";
+import FilterPrice from "./components/filters/filterPrice";
 
 const meta = {
-  title: "Example/Button",
+  title: "Filter/Price",
   component: FilterPrice,
   parameters: {
     layout: "centered",
@@ -21,8 +21,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const Default: Story = {
   args: {
-    data: [{ labelOne: 12, labelTwo: 145 }],
+    data: [{ id: 1, labelOne: 2, labelTwo: 145 }],
   },
 };

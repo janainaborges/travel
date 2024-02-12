@@ -1,5 +1,5 @@
-import colors from "@/utils/themes/colors";
 import styled from "styled-components";
+import colors from "../../../utils/themes/colors";
 
 export const FilterPriceButton = styled.button<{
   backgroundColor: string;
@@ -16,7 +16,7 @@ export const FilterPriceButton = styled.button<{
   display: flex;
   flex-direction: row;
   padding: 10px;
-  color: white;
+  color: ${colors.light};
   justify-content: space-between;
   font-size: ${(props: any) =>
     (props.size === "small" && "10px") ||

@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import colors from "../../../utils/themes/colors";
 
+export const FilterPriceContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+`;
 export const FilterPriceButton = styled.button<{
   backgroundColor: string;
   size: string;

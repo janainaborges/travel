@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../../utils/themes/colors";
 
 export const CheckboxContainer = styled.label`
   display: flex;
@@ -10,8 +11,8 @@ export const CheckboxContainer = styled.label`
 export const CheckboxInput = styled.input`
   appearance: none;
   margin-right: 8px;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border: 2px solid #ccc;
   border-radius: 4px;
   outline: none;
@@ -23,5 +24,6 @@ export const CheckboxInput = styled.input`
 `;
 
 export const CheckboxLabel = styled.span`
-  font-size: 16px;
+  font-size: 14px;
+  color: ${colors.dark};
 `;

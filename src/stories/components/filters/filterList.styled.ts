@@ -10,7 +10,7 @@ export const FilterListButton = styled.button<FilterListButtonProps>`
   display: flex;
   background-color: ${(props) => props.backgroundColor};
   border: ${(props) => `1px solid ${props.border}`};
-  padding: 8px;
+  padding:4px 8px;
   gap: 8px;
   width: 280px;
   border-radius: 2px;

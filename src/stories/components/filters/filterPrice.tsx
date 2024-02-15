@@ -1,5 +1,5 @@
 import React from "react";
-import { FilterPriceButton } from "./filterPrice.styled";
+import { FilterPriceButton, FilterPriceContainer } from "./filterPrice.styled";
 import { DataProps, FilterProps } from "@/types/components/filters.types";
 import colors from "../../../utils/themes/colors";
 
@@ -12,7 +12,7 @@ const FilterPrice: React.FC<FilterProps> = ({
   ...props
 }) => {
   return (
-    <>
+    <FilterPriceContainer>
       {data.map((item: DataProps) => (
         <FilterPriceButton
           border={border}
@@ -36,7 +36,7 @@ const FilterPrice: React.FC<FilterProps> = ({
           </span>
         </FilterPriceButton>
       ))}
-    </>
+    </FilterPriceContainer>
   );
 };
 

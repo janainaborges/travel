@@ -9,20 +9,21 @@ interface ButtonCustomsProps {
 export const ButtonCustoms = styled.button<ButtonCustomsProps>`
   background-color: ${(props: any) => props.backgroundColor};
   width: ${(props: any) =>
-    (props.size === "small" && "4rem") ||
-    (props.size === "medium" && "10rem") ||
-    (props.size === "large" && "14rem")};
+     (props.size === "small" && "5rem") ||
+     (props.size === "medium" && "7rem") ||
+     (props.size === "large" && "14rem")};
   border: none;
   border-radius: ${(props: any) => props.border};
   display: flex;
   flex-direction: row;
-  padding: 12px;
+  padding: 8px;
   color: ${colors.light};
   justify-content: space-around;
   place-items: center;
+  gap: 2px;
   font-size: ${(props: any) =>
-    (props.size === "small" && "12px") ||
-    (props.size === "medium" && "14px") ||
+    (props.size === "small" && "10px") ||
+    (props.size === "medium" && "12px") ||
     (props.size === "large" && "16px")};
 `;
 

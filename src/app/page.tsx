@@ -1,9 +1,15 @@
-"use client"
-import FilterList from "@/stories/components/filters/filterList";
-import { IoHomeOutline } from "react-icons/io5";
+"use client";
+import React from "react";
+import { TicketsProvider } from "@/provider/TicketContext";
+import Tickets from "./(pages)/tickets/page";
 
-export default function Home() {
-  return <div>
-    <FilterList data={[{ id: 1, icon: IoHomeOutline, text: "casa", number: 12 }]}/>
-  </div>;
-}
+
+const Home = () => {
+  return (
+    <TicketsProvider>
+        <Tickets />
+    </TicketsProvider>
+  );
+};
+
+export default Home;

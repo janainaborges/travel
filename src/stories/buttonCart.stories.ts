@@ -2,17 +2,22 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
 
 
-import ButtomCart from "./components/buttons/buttomCart";
+import ButtonCart from "./components/buttons/buttonCart";
 
 const meta = {
   title: "Button/Cart",
-  component: ButtomCart,
+  component: ButtonCart,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-  argTypes: {},
-} satisfies Meta<typeof ButtomCart>;
+  argTypes: {
+    size: {
+      control: { type: "select" },
+      options: ["small", "medium", "large"],
+    },
+  },
+} satisfies Meta<typeof ButtonCart>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -20,6 +25,6 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     text: 9,
-    icon: PiShoppingCartSimpleFill
+    icon: PiShoppingCartSimpleFill,
   },
 };

@@ -10,8 +10,8 @@ export const FilterProgressContainer = styled.div`
 `;
 
 export const ProgressBarContainer = styled.div`
-  width: 200px;
-  height: 30px;
+  width: 160px;
+  height: 26px;
   background-color: ${colors.gray};
   border-radius: 2px;
 `;
@@ -29,10 +29,10 @@ export const ProgressBarText = styled.span`
   font-size: 12px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 15px;
   transform: translate(-50%, -50%);
 `;
 export const FilterProgressText = styled.span`
   color: ${colors.dark};
-  font-size: 16px;
+  font-size: 12px;
 `;

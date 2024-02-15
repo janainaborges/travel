@@ -13,7 +13,7 @@ interface ListItemProps {
   color?: string;
   icon?: IconType;
   size?: string;
-  text: string;
+  text: string | number;
   onClick?: () => void;
 }
 
@@ -32,9 +32,14 @@ const ButtonCuston: React.FC<ListItemProps> = ({
         backgroundColor={backgroundColor}
         size={size}
         border={border}
+        {...props}
       >
         <ListItemText color={color}>{text}</ListItemText>
-        <IconWrapper color={color}>{Icon && <Icon />}</IconWrapper>
+        {Icon && (
+          <IconWrapper color={color}>
+            <Icon />
+          </IconWrapper>
+        )}
       </ButtonCustoms>
     </>
   );

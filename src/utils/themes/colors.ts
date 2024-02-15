@@ -6,6 +6,7 @@ const colors = {
     gray: "#CED2DB",
     success: '#219653',
     danger: '#f6e5e5',
+    blueDark: '#3C4C70'
 };
 
 export default colors;

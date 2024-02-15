@@ -7,7 +7,7 @@ interface ButtonScoreI {
   color?: string;
   number: number;
   score?: string;
-  review?: string;
+  review?: number;
   onChange?: () => void;
 }
 const ButtonScore: React.FC<ButtonScoreI> = ({

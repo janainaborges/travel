@@ -4,6 +4,7 @@ import { DataProps, FilterProps } from "@/types/components/filters.types";
 import starts from "../../assets/Star.svg";
 import Image from "next/image";
 import { FilledStar, FilterPropertyButton } from "./filterProperty.styled";
+import { FilterPriceContainer } from "./filterPrice.styled";
 const FilterProperty: React.FC<FilterProps> = ({
   backgroundColor = "#ffffff",
   data = [],
@@ -25,7 +26,7 @@ const FilterProperty: React.FC<FilterProps> = ({
   }
 
   return (
-    <>
+    <FilterPriceContainer>
       {data.map((item: DataProps) => (
         <FilterPropertyButton
           border={border}
@@ -37,7 +38,7 @@ const FilterProperty: React.FC<FilterProps> = ({
           <span>({item.labelTwo})</span>
         </FilterPropertyButton>
       ))}
-    </>
+    </FilterPriceContainer>
   );
 };
 
